@@ -12,4 +12,8 @@ struct ToDo: Identifiable, Codable {
     var name: String
     var completed: Bool = false
     
+    static var sampleData: [ToDo] {
+        
+    }
+    
 }
