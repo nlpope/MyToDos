@@ -13,7 +13,10 @@ struct ToDo: Identifiable, Codable {
     var completed: Bool = false
     
     static var sampleData: [ToDo] {
-        
+        [
+            ToDo(name: "Get groceries"),
+            ToDo(name: "make doctor appt", completed:true)
+        ]
     }
     
 }
