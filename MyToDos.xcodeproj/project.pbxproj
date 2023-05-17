@@ -14,6 +14,7 @@
 		40BB0C112A124C22006A555B /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB0C102A124C22006A555B /* ToDo.swift */; };
 		40BB0C152A13885C006A555B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB0C142A13885C006A555B /* DataStore.swift */; };
 		40BB0C172A13A1C2006A555B /* ToDoFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB0C162A13A1C1006A555B /* ToDoFormViewModel.swift */; };
+		40BB0C192A14FE99006A555B /* ToDoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BB0C182A14FE99006A555B /* ToDoFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		40BB0C102A124C22006A555B /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		40BB0C142A13885C006A555B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		40BB0C162A13A1C1006A555B /* ToDoFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFormViewModel.swift; sourceTree = "<group>"; };
+		40BB0C182A14FE99006A555B /* ToDoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				40BB0C022A124A8F006A555B /* MyToDosApp.swift */,
 				40BB0C142A13885C006A555B /* DataStore.swift */,
 				40BB0C162A13A1C1006A555B /* ToDoFormViewModel.swift */,
+				40BB0C182A14FE99006A555B /* ToDoFormView.swift */,
 				40BB0C042A124A8F006A555B /* ContentView.swift */,
 				40BB0C102A124C22006A555B /* ToDo.swift */,
 				40BB0C062A124A95006A555B /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BB0C192A14FE99006A555B /* ToDoFormView.swift in Sources */,
 				40BB0C112A124C22006A555B /* ToDo.swift in Sources */,
 				40BB0C152A13885C006A555B /* DataStore.swift in Sources */,
 				40BB0C052A124A8F006A555B /* ContentView.swift in Sources */,
