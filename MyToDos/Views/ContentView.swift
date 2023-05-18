@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var dataStore: DataStore
+    @State private var modalType: ModalType? = nil
     
     var body: some View {
         NavigationView {
@@ -16,16 +17,17 @@ struct ContentView: View {
             
             
             List() {
-                ForEach(dataStore.toDos) { todo in
+                ForEach(dataStore.toDos) { toDo in
                     Button {
-                        
+                        modalType = .update(toDo)
                     } label: {
-                        Text(todo.name)
+                        Text(toDo.name)
                             .font(.title3)
-                            .strikethrough(todo.completed)
-                            .foregroundColor(todo.completed ? .green : Color(.label))
+                            .strikethrough(toDo.completed)
+                            .foregroundColor(toDo.completed ? .green : Color(.label))
                     }
                 }
+                .onDelete(perform: dataStore.deleteToDo)
             }
             
             
@@ -42,15 +44,17 @@ struct ContentView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button{
-                        
+                        modalType = .new
                     } label: {
                         Image(systemName: "plus.circle.fill")
                     }
                 }
             }
             
-            
-            
+        }
+        .sheet(item: $modalType) { modalType in
+            modalType
+            // or $0
         }
         
     }
